@@ -1,7 +1,9 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
-## Write a short comment describing this function
+
+## This function set and get a cache varaible in the parent environment 
+## and create a list of function that can be called by cacheSolve using $
 
 makeCacheMatrix <- function(x = matrix()) {
         invmatrix <- NULL ## reset solve cache variable when matrix is modified
@@ -18,7 +20,8 @@ makeCacheMatrix <- function(x = matrix()) {
         }
 
 
-## Write a short comment describing this function
+## This function check if the solve for inverted matrix was already calculated and store in the cache
+## If it wasn't store it will calculated it and store the value to save computing time 
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
